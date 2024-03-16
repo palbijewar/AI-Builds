@@ -31,7 +31,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="m-2 bg-gray-700 rounded-lg">
+    <header className="m-2 bg-gray-100 rounded-lg">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-2 font-mono font-extrabold bg-gray-300 rounded-lg">
@@ -42,7 +42,7 @@ export default function Header() {
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-100"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-800"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -51,7 +51,7 @@ export default function Header() {
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12 mr-10">
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white hover:underline">
+            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-800 hover:underline">
               Product
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </Popover.Button>
@@ -101,14 +101,14 @@ export default function Header() {
             </Transition>
           </Popover>
 
-          <a href="/services" className="text-sm font-semibold leading-6 text-white hover:underline">
+          <a href="/services" className="text-sm font-semibold leading-6 text-gray-800 hover:underline">
             Services
           </a>
-          <a href="#features" className="text-sm font-semibold leading-6 text-white hover:underline">
+          <a href="#features" className="text-sm font-semibold leading-6 text-gray-800 hover:underline">
           Features
           </a>
-          <a href="#contact" className="text-sm font-semibold leading-6 text-white hover:underline">
-            Contact Us
+          <a href="#contact" className="text-sm font-semibold leading-6 text-gray-800 hover:underline">
+            Contact us
           </a>
         </Popover.Group>
       </nav>
@@ -173,7 +173,7 @@ export default function Header() {
                   href="/"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Contact Us
+                  Contact us
                 </a>
               </div>
             </div>
