@@ -2,13 +2,7 @@ import React from 'react';
 
 export default function App() {
   return (
-    <footer className="bg-neutral-100 text-center text-neutral-200 dark:bg-neutral-200 dark:text-neutral-800 lg:text-left">
-      <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
-        <div className="mr-12 hidden lg:block">
-          <span>Get connected with us on social networks:</span>
-        </div>
-      </div>
-
+    <footer className="text-center text-neutral-200 dark:bg-neutral-150 dark:text-neutral-800 lg:text-left">
       <div className="mx-6 py-10 text-center md:text-left">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="col-span-1">
@@ -53,9 +47,9 @@ export default function App() {
       </div>
 
       {/* Copyright section */}
-      <div className="bg-neutral-200 p-6 text-center dark:bg-neutral-300">
-        <span>© 2024 Copyright:</span>
-        <a className="font-semibold text-neutral-200 dark:text-neutral-800" href="https://tw-elements.com/"> AI Builds</a>
+      <div className="p-6 text-center dark:bg-neutral-300">
+        <span>© 2024 Copyright :</span>
+        <a className="font-semibold text-neutral-200 dark:text-neutral-500" href="https://tw-elements.com/"> AI Builds</a>
       </div>
     </footer>
   );
