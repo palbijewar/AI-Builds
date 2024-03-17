@@ -10,6 +10,7 @@ import Engagement from './pages/Engagement';
 import Security from './pages/Security';
 import Integration from './pages/Integration';
 import Automation from './pages/Automation';
+import Features from './pages/Features';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/integration" element={<Integration />} />
           <Route path="/automation" element={<Automation />} />
         </Routes>
+        <Features />
         <Footer />
       </div>
     </Router>
