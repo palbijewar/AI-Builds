@@ -24,7 +24,7 @@ function App() {
           <Route path="/engagement" element={<Engagement />} />
           <Route path="/security" element={<Security />} />
           <Route path="/integration" element={<Integration />} />
-          <Route path="/automations" element={<Automation />} />
+          <Route path="/automation" element={<Automation />} />
         </Routes>
         <Footer />
       </div>

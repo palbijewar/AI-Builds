@@ -5,8 +5,9 @@ import { AiOutlineArrowDown, AiFillPlayCircle } from 'react-icons/ai';
 
 const products = [
   { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '/analytics', icon: FaChartPie },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '/engagement', icon: FaExchangeAlt },
   { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '/security', icon: FaDatabase },
+  { name: 'Automations', description: 'Automation services', href: '/automation', icon: AiFillPlayCircle },
+  { name: 'Engagement', description: 'Speak directly to your customers', href: '/engagement', icon: FaExchangeAlt },
   { name: 'Integrations', description: 'Connect with third-party tools', href: '/integration', icon: FaBolt },
 ];
 
