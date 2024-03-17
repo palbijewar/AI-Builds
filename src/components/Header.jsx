@@ -93,7 +93,7 @@ export default function Header() {
             </Transition>
           </Popover>
 
-          <a href="/services" className="text-sm font-semibold leading-6 text-gray-800 hover:underline cursor-pointer">
+          <a href="#services" className="text-sm font-semibold leading-6 text-gray-800 hover:underline cursor-pointer">
             Services
           </a>
           <a href="#features" className="text-sm font-semibold leading-6 text-gray-800 hover:underline cursor-pointer">
@@ -150,7 +150,7 @@ export default function Header() {
                   )}
                 </Disclosure>
                 <a
-                  href="/services"
+                  href="#services"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 cursor-pointer"
                 >
                   Services

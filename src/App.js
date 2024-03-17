@@ -3,14 +3,15 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Footer from './pages/Footer';
+import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import Analytics from './pages/Analytics';
 import Engagement from './pages/Engagement';
 import Security from './pages/Security';
 import Integration from './pages/Integration';
 import Automation from './pages/Automation';
-import Features from './pages/Features';
+import Features from './components/Features';
+import Services from './components/Services';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/integration" element={<Integration />} />
           <Route path="/automation" element={<Automation />} />
         </Routes>
+        <Services/>
         <Features />
         <Footer />
       </div>
