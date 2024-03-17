@@ -1,33 +1,25 @@
-import { Fragment, useState } from 'react'
-import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
-import {
-  ArrowPathIcon,
-  Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
-  XMarkIcon,
-} from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import React, { Fragment, useState } from 'react';
+import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react';
+import { FaChartPie, FaExchangeAlt, FaDatabase, FaBolt, FaBars, FaPhone, FaTimes } from 'react-icons/fa';
+import { AiOutlineArrowDown, AiFillPlayCircle } from 'react-icons/ai';
 
 const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '/analytics', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '/engagement', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '/security', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '/integration', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: 'automation', icon: ArrowPathIcon },
-]
+  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '/analytics', icon: FaChartPie },
+  { name: 'Engagement', description: 'Speak directly to your customers', href: '/engagement', icon: FaExchangeAlt },
+  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '/security', icon: FaDatabase },
+  { name: 'Integrations', description: 'Connect with third-party tools', href: '/integration', icon: FaBolt },
+];
+
 const callsToAction = [
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
-]
+  { name: 'Contact sales', href: '#', icon: FaPhone },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(' ');
 }
 
 export default function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="m-2 bg-gray-100 rounded-lg">
@@ -45,14 +37,14 @@ export default function Header() {
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+            <FaBars className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12 mr-10">
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-800 hover:underline cursor-pointer">
               Product
-              <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+              <AiOutlineArrowDown className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </Popover.Button>
 
             <Transition
@@ -125,7 +117,7 @@ export default function Header() {
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
-              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+              <FaTimes className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
           <div className="mt-6 flow-root">
@@ -136,7 +128,7 @@ export default function Header() {
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 cursor-pointer">
                         Product
-                        <ChevronDownIcon
+                        <AiOutlineArrowDown
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
                           aria-hidden="true"
                         />
@@ -180,5 +172,5 @@ export default function Header() {
         </Dialog.Panel>
       </Dialog>
     </header>
-  )
+  );
 }
