@@ -23,7 +23,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="m-2 bg-gray-100 rounded-lg">
+    <header className="m-2 bg-gray-100 rounded-lg fixed w-full top-0 z-50">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-2 font-mono font-extrabold  rounded-lg cursor-pointer">
