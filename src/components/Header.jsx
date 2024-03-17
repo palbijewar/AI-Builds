@@ -107,7 +107,7 @@ export default function Header() {
           <a href="#features" className="text-sm font-semibold leading-6 text-gray-800 hover:underline cursor-pointer">
             Features
           </a>
-          <a href="#contact" className="text-sm font-semibold leading-6 text-gray-800 hover:underline cursor-pointer">
+          <a href="/contact" className="text-sm font-semibold leading-6 text-gray-800 hover:underline cursor-pointer">
             Contact us
           </a>
         </Popover.Group>
