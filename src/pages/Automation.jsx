@@ -3,7 +3,7 @@ import { FaRobot, FaCog, FaChartLine } from 'react-icons/fa';
 
 const Automation = () => {
   return (
-    <div className="bg-gray-100 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gray-100 min-h-screen py-16 px-4 sm:px-6 lg:px-8 mt-5">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">Automation Solutions</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
